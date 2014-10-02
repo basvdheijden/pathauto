@@ -9,7 +9,7 @@ Drupal.behaviors.pathFieldsetSummaries = {
       if (automatic) {
         return Drupal.t('Automatic alias');
       }
-      if (path) {
+      else if (path) {
         return Drupal.t('Alias: @alias', { '@alias': path });
       }
       else {
