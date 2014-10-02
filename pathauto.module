@@ -27,11 +27,6 @@ use Drupal\node\Entity\Node;
 use Drupal\user\Entity\User;
 
 /**
- * The default ignore word list.
- */
-define('PATHAUTO_IGNORE_WORDS', 'a, an, as, at, before, but, by, for, from, is, in, into, like, of, off, on, onto, per, since, than, the, this, that, to, up, via, with');
-
-/**
  * Implements hook_hook_info().
  */
 function pathauto_hook_info() {
