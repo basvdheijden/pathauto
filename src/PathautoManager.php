@@ -530,7 +530,7 @@ class PathautoManager implements PathautoManagerInterface {
    *   depending on the $load_entities parameter.
    */
   protected function getTermTree($vid, $parent = 0, $max_depth = NULL, $load_entities = FALSE) {
-    return taxonomy_get_tree($vid, $parent, $max_depth, $load_entities);
+    return \Drupal::entityManager()->getStorage('taxonomy_term')->loadTree($vid, $parent, $max_depth, $load_entities);
   }
 
   /**
